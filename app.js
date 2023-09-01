@@ -46,7 +46,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-    .connect('mongodb+srv://himanshu:htEv3RmLfO5cnrLM@cluster0.vmc7hfy.mongodb.net/mern?retryWrites=true&w=majority')
+    .connect('mongodb+srv://himanshu:htEv3RmLfO5cnrLM@cluster0.vmc7hfy.mongodb.net/mern-prod?retryWrites=true&w=majority')
     .then(() => { 
         app.listen(process.env.PORT || 5000);
     })
