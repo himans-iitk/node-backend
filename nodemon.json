@@ -3,6 +3,6 @@
         "DB_USER": "himanshu",
         "DB_PASSWORD": "htEv3RmLfO5cnrLM",
         "DB_NAME": "mern-prod",
-        "JWT_KEY": "supersecret_dont_share"
+        "JWT_KEY": "this_is_production_secret_key"
     }
 }
