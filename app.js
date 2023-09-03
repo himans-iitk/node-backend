@@ -11,6 +11,8 @@ const HttpError = require('./models/http-error');
 
 const app = express();
 
+app.use(cors());
+
 app.use(bodyParser.json());
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
