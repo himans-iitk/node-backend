@@ -138,7 +138,7 @@ const login = async (req, res, next) => {
     try{
         token = jwt.sign(
             {userId: existingUser.id, email: existingUser.email}, 
-            'supersecret_dont_share', 
+            JWT_KEY, 
             {expiresIn: '1h'})
         ;
     } catch(err) {
